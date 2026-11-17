@@ -1,0 +1,13 @@
+services:
+  web:
+    image: nginx
+    container_name: web-container
+    ports:
+      - "8080:80"
+
+  database:
+    image: mysql:8
+    container_name: db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: Rohini_23
+      MYSQL_DATABASE: studentdb
